@@ -1,0 +1,20 @@
+
+D:\Semester6\FSA\MockProject\FE_GitLab\fe\src\pages\manager\ShiftSchedule.jsx
+  283:31  error  'isConnected' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Semester6\FSA\MockProject\FE_GitLab\fe\src\pages\staff\MyShift.jsx
+   10:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                no-unused-vars
+   88:27  error  'Icon' is defined but never used                                                             no-unused-vars
+  401:35  error  'isConnected' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  603:18  error  'error' is defined but never used                                                            no-unused-vars
+  646:18  error  'error' is defined but never used                                                            no-unused-vars
+
+D:\Semester6\FSA\MockProject\FE_GitLab\fe\src\pages\storeManager\ShiftScheduleStoreManager.jsx
+  107:27  error    'Icon' is defined but never used                                                                                                    no-unused-vars
+  207:10  error    'loadingStaff' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                        no-unused-vars
+  276:6   warning  React Hook useEffect has missing dependencies: 'fetchStaffInfo' and 'staffMap'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  340:31  error    'isConnected' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                         no-unused-vars
+  502:6   warning  React Hook useMemo has a missing dependency: 'getStaffDisplay'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+
+✖ 11 problems (9 errors, 2 warnings)
+
