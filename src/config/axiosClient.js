@@ -3,7 +3,20 @@ import ENV from "./env";
 import { useAuthStore } from "@/stores/authStore";
 import { getCurrentFirebaseToken } from "@/services/firebaseAuthService";
 
-const API_BASE_URL = "/api";
+/**
+ * API Base URL
+ *
+ * Local:
+ * VITE_API_BASE_URL=http://localhost:3000/api
+ *
+ * Production Vercel:
+ * VITE_API_BASE_URL=https://api-gateway-1yqp.onrender.com/api
+ */
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api";
+
+console.log("✅ API_BASE_URL =", API_BASE_URL);
+console.log("✅ VITE_API_BASE_URL =", import.meta.env.VITE_API_BASE_URL);
 
 const axiosClient = axios.create({
   baseURL: API_BASE_URL,
